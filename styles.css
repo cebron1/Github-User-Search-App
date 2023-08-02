@@ -1,0 +1,322 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  /* lightmode */
+  --h1-lightmode: #2B3442;
+  --searchbtn: #0079ff;
+  --backgroundlight: #F6F8FF;
+  --container: #FEFEFE;
+  --bodytxt-color: #697C9A;
+  --DevFinder-clr: #222731;
+}
+
+/* GENERAL STYLES */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100vh;
+  background-color: var(--backgroundlight);
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 327px;                /*TODO: Make sure width and height is correct*/
+  max-width: 730px; 
+}
+.header,.srch,.main{
+  width: 100%;
+  max-width: 327px;
+}
+.srch, .main{
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* TYPOGRAPHY */
+
+h1,h2,h3,h4,p,a,input,button{
+  font-family: 'Space mono', sans-serif;
+  font-weight: 400;                      
+}
+h1,h2,button{
+  font-weight: 700;
+}
+
+/* TITLE WITH LIGHT-DARK-MODE */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin: 2.4375rem auto 1.75rem auto;
+}
+.header__devfinder{
+  font-size: 1.625rem;
+  color: var(--DevFinder-clr);
+  line-height: 2.4375rem;
+}
+.header__lghtDrkToggle{
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.1875rem;
+  letter-spacing: 2.5px;
+  color:#4B6A9B;
+}
+.sunimg{
+  margin-left: 1rem;
+  vertical-align: bottom;
+}
+
+/* SEARCH BAR */
+
+.srch{
+  margin: 0 auto 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search__img{
+  margin: 1.25rem 0.5593rem 1.25rem 1rem;
+  width: 20px;
+  height: 20px;
+}
+input{
+  line-height: 1.563rem;
+  font-size: 0.8125rem;
+  text-align: left;
+  width: 56.27%;
+  border: none;
+  letter-spacing: -1px; 
+}
+.btn{
+  width: 25.68%;
+  margin: auto;
+  padding: 0.78rem 1rem;
+  border-radius: 8px;
+  background-color: var(--searchbtn);
+  color:hsl(0, 0%, 100%);
+  border: 0;
+  font-size: 0.875rem;
+  line-height: 1.295rem;
+}
+
+/* MAIN PROFILE*/
+
+.srch, .main{
+    box-shadow: 5px 10px 18px rgba(70, 96, 187, 0.1986);          
+}
+
+/* HEADER */
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 2rem 4.375rem 1.75rem 1.5rem;
+}
+.profile__pic{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 1.188rem;
+}
+.profile__name{
+  font-size: 1rem;
+  line-height: 1.48rem;
+  color: var(--h1-lightmode);
+}
+.profile__username, .profile__join-date{
+  font-size: 0.8125rem;
+  line-height: 1.2rem;
+}
+.profile__username{
+  color: var(--searchbtn);
+}
+
+/* BODY CONTENT */
+
+.bio{
+  font-size: 0.8125rem;
+  line-height: 1.563rem;
+  color: var(--bodytxt-color);
+  width: 85.3%;
+  margin: 0 auto;
+  line-height: 1.5625rem;
+}
+
+/* STATS */
+
+.stats{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85.3%;
+  border-radius: 8px;
+  background-color: var(--backgroundlight);
+  margin: 1.5rem auto;
+}
+.stats div{
+  padding: 1.125rem 0.875rem 1.187rem 0.9375rem;
+  text-align: center;
+}
+.stats h4{
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  color: var(--bodytxt-color);
+}
+.stats h2{
+  font-size: 1rem;
+  line-height: 1.48rem;
+  color: var(--h1-lightmode);
+  margin-top: 0.5rem;
+}
+
+/* BOTTOM LINKS */
+
+.btm-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 56.57%; 
+  margin: 1.5rem 7.375rem  2rem 1.5rem;
+}
+.btm-links a{
+  font-size: 0.8125rem;
+  line-height: 1.2rem;
+  text-decoration: none;
+  color: var(--bodytxt-color);
+  margin-bottom: 1rem;
+}
+.btm-links img{
+  /* This is to align images and text in links */
+  margin-right: 0.8125rem;
+  margin-bottom: -6px;   /* aligns image next to text */
+  
+}
+.location img{
+  /* This is to align San Fransico link with other links */
+  margin-right: 19px;
+}
+/* 
+                                 TABLET
+  width of entire screen:  768px      content width:  573px
+  height of entire screen: 1024px     content height: 648px
+*/
+
+@media(min-width: 768px){
+  .wrapper{
+    width: 74.61%;
+    margin: 13.67vh auto 23.05vh;
+  }
+  .header,.srch,.main{
+    max-width: 573px;
+  }
+  /* MAIN HEADER */
+  .header{
+    margin: 0 auto 2.25rem;
+  }
+
+  /* SEARCH BAR */
+  .srch{
+    margin: 0 auto 1.5rem;
+    justify-content: space-between;
+  }
+  .search__img{
+    width: 24px;
+    height: 24px;
+    margin: 1.4375rem 0 1.375rem 2rem;
+  }
+  input{
+    font-size: 1.125rem;
+    letter-spacing: 0;
+  }
+  .btn{
+    padding: 0.781rem 1.5rem 0.844rem;
+    margin: 0.593rem 0.625rem;
+    width: 18.5%;
+    font-size: 1rem;
+    line-height: 1.48rem;
+  }
+  
+  /* MAIN PROFILE */
+  .profile{
+    justify-content: flex-start;
+    margin: 2.5rem auto 1.5rem 2.5rem;
+  }
+  .profile__pic{
+    height: 117px;
+    width: 117px;
+    margin-right: 2.56rem;
+  }
+  .profile__name{
+    font-size: 1.625rem;
+    line-height: 2.4rem;
+  }
+  .profile__username{
+    font-size: 1rem;
+    line-height: 1.48rem;
+  }
+  .profile__join-date{
+    font-size: 0.9375rem;
+    line-height: 1.388rem;
+  }
+  /* BODY CONTENT */
+  .bio{
+    font-size: 0.9375rem;
+  }
+  
+  /* STATS */
+  .stats{
+    width: 86%;
+    margin: 2rem auto 1.875rem;
+    border: 1px solid black;   /*remove border*/
+  }
+  .stats div{
+    padding-top: 0.9375rem;
+    padding-bottom: 1.06rem;
+  }
+  .stats h4{
+    font-size: 0.8125rem;
+    line-height: 1.2rem;
+  }
+  .stats h2{
+    font-size: 1.375rem;
+    line-height: 2rem;
+    margin-top: 1px;
+  }
+  /* BOTTOM LINKS */
+  .btm-links{
+    width: 74.87%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2.5rem;
+    margin-right: 18.15%;
+  }
+  .btm-links a{
+    font-size: 0.937rem;
+    line-height: 1.39rem;
+    margin-bottom: 15px;
+  }
+
+}
+/* 
+                                    DESKTOP VERSION
+     Width of content:  730px                      Width of screen:  1440px
+     Height of content: 586px                      Height of screen: 900px     
+*/
+@media(min-width: 1440px){
+  
+
+} 
