@@ -229,6 +229,7 @@ input {
   }
 
   /* SEARCH BAR */
+
   .srch {
     margin: 0 auto 1.5rem;
     justify-content: space-between;
@@ -251,6 +252,7 @@ input {
   }
   
   /* MAIN PROFILE */
+
   .profile {
     justify-content: flex-start;
     margin: 2.5rem auto 1.5rem 2.5rem;
@@ -272,7 +274,9 @@ input {
     font-size: 0.9375rem;
     line-height: 1.388rem;
   }
+
   /* BODY CONTENT */
+
   .bio {
     font-size: 0.9375rem;
   }
@@ -281,7 +285,6 @@ input {
   .stats {
     width: 86%;
     margin: 2rem auto 1.875rem;
-    border: 1px solid black;   /*remove border*/
   }
   .stats div {
     padding-top: 0.9375rem;
@@ -296,7 +299,9 @@ input {
     line-height: 2rem;
     margin-top: 1px;
   }
+
   /* BOTTOM LINKS */
+
   .btm-links {
     width: 74.87%;
     display: grid;
@@ -316,7 +321,22 @@ input {
      Width of content:  730px                      Width of screen:  1440px
      Height of content: 586px                      Height of screen: 900px     
 */
-@media(min-width: 1440px){
-  
+@media(min-width: 1440px) {
+  .wrapper {
+    width: 730px;
+    height: 586px;
+  }
+  .header, .srch, .main {
+    max-width: 730px;
+  }
+  /* this moves join date to right hand cornder */
+  .profile__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile__join-date {
+    margin-left: 138px;
+    padding-top: 5px;
+  }
 
 } 
