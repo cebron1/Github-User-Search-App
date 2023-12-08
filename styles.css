@@ -65,7 +65,7 @@ h1,h2,button {
   color: var(--DevFinder-clr);
   line-height: 2.4375rem;
 }
-.header__lghtDrkToggle {
+#header_lghtDrkToggle {
   text-decoration: none;
   font-size: 0.8125rem;
   font-weight: 700;
@@ -216,6 +216,9 @@ input {
 */
 
 @media(min-width: 768px) {
+  html{
+    overflow: hidden;
+  }
   .wrapper {
     width: 74.61%;
     margin: 13.67vh auto 23.05vh;
@@ -322,6 +325,8 @@ input {
      Height of content: 586px                      Height of screen: 900px     
 */
 @media(min-width: 1440px) {
+  
+
   .wrapper {
     width: 730px;
     height: 586px;
