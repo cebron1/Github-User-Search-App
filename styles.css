@@ -32,11 +32,11 @@ html, body {
   min-width: 327px;                /*TODO: Make sure width and height is correct*/
   max-width: 730px; 
 }
-.header,.srch,.main {
+#form,.header,.main {
   width: 100%;
   max-width: 327px;
 }
-.srch, .main {
+#form, .main {
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -79,8 +79,7 @@ h1,h2,button {
 }
 
 /* Search Bar */
-
-.srch {
+#form {
   margin: 0 auto 1rem auto;
   display: flex;
   justify-content: center;
@@ -113,7 +112,7 @@ input {
 
 /* MAIN PROFILE*/
 
-.srch, .main {
+#form, .main {
     box-shadow: 5px 10px 18px rgba(70, 96, 187, 0.1986);          
 }
 
@@ -223,7 +222,7 @@ input {
     width: 74.61%;
     margin: 13.67vh auto 23.05vh;
   }
-  .header,.srch,.main {
+  .header,#form,.main {
     max-width: 573px;
   }
   /* MAIN HEADER */
@@ -233,7 +232,7 @@ input {
 
   /* SEARCH BAR */
 
-  .srch {
+  #form {
     margin: 0 auto 1.5rem;
     justify-content: space-between;
   }
@@ -331,7 +330,7 @@ input {
     width: 730px;
     height: 586px;
   }
-  .header, .srch, .main {
+  .header, #form, .main {
     max-width: 730px;
   }
   /* this moves join date to right hand cornder */
