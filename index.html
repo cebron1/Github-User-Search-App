@@ -22,15 +22,15 @@
     <!-- Search Bar -->
     <form id ="form" class = "srch">
       <img src="starter-code/assets/icon-search.svg" alt="#" class="search__img">
-      <input type="text" class="search__input" type="text" placeholder="Search Github username..." name="q">
-      <button class="btn">Search</button>
+      <input type="text" id = "userInput" class="search__input" type="text" placeholder="Search Github username..." />
+      <button id = "searchButton"class="btn">Search</button>
     </form>
 
     <!-- Profile -->
 
     <main class="main">
       <header class="profile">
-        <div class="profile__pic"></div>
+        <img class="profile__pic" id ="avatar" src = ""></img>
         <div class="profile__wrapper">
           <div>
             <h1 class="profile__name">The Octocat</h1>
@@ -68,6 +68,6 @@
       </footer>
     </main>
   </div>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="index.js" ></script>
 </body>
 </html>
